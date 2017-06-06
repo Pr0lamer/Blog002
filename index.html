@@ -31,7 +31,7 @@
     					<a href="#"><img src="img/logo.png" alt="logo"></a>
     				</div>
     			</div>
-    			<div class="col-lg-6">
+    			<div id="menwr" class="col-lg-6 col-lg-offset-3">
     				<div id="mainmenu">
     					<a href="" class="menua acmen">How to</a>
     					<a href="" class="menua">Games</a>
@@ -39,13 +39,13 @@
     					<a href="" class="menua">App Reviews</a>
     				</div>
     			</div>
-    			<div class="col-lg-4">
-    				<div id="search">
+    			<div class="col-lg-1" id="search">
+    				
 						<form action="">
 							<img src="img/seric.png" alt="" id="seric"><input type="search" name="q" placeholder="Search" class="search"> 
 						</form>
     					
-    				</div>
+    				
     				
     			</div>
     		</div>
@@ -153,15 +153,40 @@
 
                     <div id="rp">
                         <h1>Recent posts</h1>
-                        <div id="twm">
-                            <a href="#" class="twm">Today</a><a href="#" class="twm twma">Week</a><a href="#" class="twm">Month</a>
-                        </div>
-                        <div class="twmh">
-                            <a href="#" class="">Pellentesque habitant morbi senectus et netus et malesuada</a>
-                            <span class="ndate">January 7, 2017</span>
-                            <a href="#" class="">Pellentesque habitant morbi senectus et netus et malesuada</a>
-                            <span class="ndate">January 7, 2017</span>
-                        </div>
+                        <div class="tabs">
+        <ul class="nav nav-tabs">
+            <li class="twm"><a href="#tab1" data-toggle="tab">Today</a></li>
+            <li class="twm active"><a href="#tab2" data-toggle="tab">Week</a></li>
+            <li class="twm"><a href="#tab3" data-toggle="tab">Month</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade" id="tab1">
+                <div class="twmh">
+                    <a href="#" class="">1Pellentesque habitant morbi senectus et netus et malesuada</a>
+                    <span class="ndate">January 7, 2017</span>
+                    <a href="#" class="">Pellentesque habitant morbi senectus et netus et malesuada</a>
+                    <span class="ndate">January 7, 2017</span>
+                </div>
+            </div>
+            <div class="tab-pane active fade in" id="tab2">
+                <div class="twmh">
+                    <a href="#" class="">2Pellentesque habitant morbi senectus et netus et malesuada</a>
+                    <span class="ndate">January 7, 2017</span>
+                    <a href="#" class="">Pellentesque habitant morbi senectus et netus et malesuada</a>
+                    <span class="ndate">January 7, 2017</span>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab3">
+                <div class="twmh">
+                    <a href="#" class="">3Pellentesque habitant morbi senectus et netus et malesuada</a>
+                    <span class="ndate">January 7, 2017</span>
+                    <a href="#" class="">Pellentesque habitant morbi senectus et netus et malesuada</a>
+                    <span class="ndate">January 7, 2017</span>
+                </div>
+            </div>
+        </div>
+    </div>
                     </div>  
                 </div>
             </div>
@@ -246,5 +271,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
   </body>
 </html>
