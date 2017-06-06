@@ -50,6 +50,7 @@ padding-top: 13px;
 
 }
 .search{
+	display: none;
 	padding: 6px 0px 9px 35px;
 	width: 100%;
 	border-style: none;
@@ -194,7 +195,7 @@ span.ndate{
 	text-decoration: none;
 	border-radius: 1px;
 	font-size: 15px;
-	padding-top: 12px;
+	
 	color: white;
 	text-align: center;
 	display: inline-block;
@@ -233,7 +234,7 @@ span.ndate{
 	background-color: #3493b8;
 }
 
-.twmh::after {
+.active::after {
     content: ''; 
     position: absolute; /* Абсолютное позиционирование */
  left: 180px;
@@ -384,4 +385,39 @@ body {
   /* Set the fixed height of the footer here */
   height: 501px;
   
+}
+.nav-tabs{
+	border: none;
+}
+.nav-tabs > li > a{
+	margin-right: 0px;
+	font-size: 15px !important;
+padding-top: 12px;
+text-align: center !important;
+	text-decoration: none !important;
+border-radius: 1px;
+
+color: white !important;
+display: inline-block !important;
+min-height: 45px;
+min-width: 116px;
+background-color: #54c3eb;
+border: none !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+   border: none;
+color: white;
+	background-color: #3493b8;
+}
+.nav-tabs > li.active > a,
+ 
+.nav-tabs > li.active > a:focus,
+ 
+.nav-tabs > li.active > a:hover{
+ 
+border: none;
+color: white;
+	background-color: #3493b8 !important;
+ 
 }
