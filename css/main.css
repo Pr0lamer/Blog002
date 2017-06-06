@@ -364,7 +364,7 @@ text-decoration: none;
 #cpr{
 	font-weight: 700;
 	text-align: center;
-	padding: 55px 0px 55px 0px;
+	padding: 55px 0px 0px 0px;
 }
 
 html {
@@ -376,6 +376,7 @@ body {
   margin-bottom: 486px;
 }
 .footer {
+	padding-top: 30px;
   position: absolute;
   bottom: 0px;
   width: 100%;
