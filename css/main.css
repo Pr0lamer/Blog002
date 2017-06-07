@@ -131,6 +131,10 @@ span.ndate{
 	padding-bottom: 1px;
 	border-bottom: 1px solid #54c3eb;
 }
+.namelink:hover{
+	color: #eb8d1d;
+	border-color:#eb8d1d;
+}
 .lcv{
 	padding-left: 180px; 
 	display: inline-block;
@@ -141,7 +145,7 @@ span.ndate{
 }
 
 .ic{
-	color: #54c3eb;
+	color: #54c3eb !important;
 	padding: 0px 10px 0px 0px;
 }
 #update .ic{
