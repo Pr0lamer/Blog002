@@ -384,7 +384,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 501px;
-  
+  background-color: #eceef0;
 }
 .nav-tabs{
 	border: none;
@@ -407,7 +407,7 @@ border: none !important;
 
 .nav > li > a:hover, .nav > li > a:focus {
    border: none;
-color: white;
+	color: white;
 	background-color: #3493b8;
 }
 .nav-tabs > li.active > a,
@@ -416,8 +416,79 @@ color: white;
  
 .nav-tabs > li.active > a:hover{
  
-border: none;
-color: white;
+	border: none;
+	color: white;
 	background-color: #3493b8 !important;
  
 }
+
+#subbox{
+	
+	
+	background-position: 0px 0px;
+	color: white;
+	padding: 60px 160px 60px 60px;
+	margin-top: 50px;
+	margin-right: 125px;
+	background-color: #54c3eb;
+	min-height: 320px;
+	border-radius: 20px;
+	width: 86%;
+	margin-bottom: 100px;
+}
+.bgi{
+	display: inline-block;
+	position: absolute;
+	margin: -100px 0px 0px 865px;
+}
+#subbox h2{
+	font-weight: bold;
+	
+}
+#subbox p{
+	text-align: left;
+
+	font-size: 17px;
+	line-height: 35px;
+}
+#eye{
+	color: black;
+	border: none;
+	font-style: italic;
+	padding: 0px 0px 1px 15px;
+	font-size: 13px;
+	width: 100%;
+	min-height: 35px;
+	border-radius: 90px;
+	
+}
+.eyem{
+	margin-top: 20px;
+}
+.subbtn{
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+	padding: 5px 0px 0px 0px;
+	text-align: center;
+	border-radius: 90px;
+	display: inline-block;
+	min-height: 35px;
+	width: 100%;
+	border: 1px solid white;
+	background-color: #54c3eb;
+
+}
+
+.subbtn:hover{
+	color: white;
+}
+
+.subbtn:active{
+	color: white;
+}
+
+.subbtn:visited{
+	color: white;
+}
+
