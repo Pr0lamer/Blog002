@@ -1,6 +1,43 @@
-body{
+/* Reset
+---------------------------------------------------------------------------------- */
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 501px !important;
 font-family: 'Open Sans', sans-serif;
 }
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* /Reset
+---------------------------------------------------------------------------------- */
+
+
+/* Project - 2 layer
+---------------------------------------------------------------------------------- */
+
+/* Header
+-------------------------------------------------- */
 header{
 	border-bottom: 1px solid #f5f5f5;
 }
@@ -9,16 +46,7 @@ a.menua{
 	color: black;
 	font-size: 17px;
 }
-a:hover{
-	text-decoration: none;
-	color: black;
-	
 
-}
-a:active{
-	text-decoration: none;
-	
-}
 
 #mainmenu{
 padding-top: 13px;
@@ -55,7 +83,7 @@ padding-top: 13px;
 	width: 100%;
 	border-style: none;
 	border-bottom: 1px solid #b4b4b4;
-	font-family: 'Open Sans', sans-serif;
+	
 	font-style: italic;
 
 }
@@ -64,6 +92,71 @@ padding-top: 13px;
 	position: absolute;
 
 }
+
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=search] {
+	background: url('../img/seric.png') no-repeat 9px center;
+	border: none;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	
+	border-bottom: 1px solid #b4b4b4;
+	
+}
+
+#demo-2{
+	margin-top: 30px;
+}
+
+#demo-2 input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+	background-color: #fff;
+}
+#demo-2 input[type=search]:focus {
+	width: 230px;
+	padding-left: 32px;
+	color: #000;
+	
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+
+/* /Header */
 
 .posts{
 	margin-top: 0px;
@@ -191,26 +284,47 @@ span.ndate{
 	margin-top: 20px;
 }
 
+/* Tabs */
+.nav-tabs{
+	border: none;
+}
+.nav-tabs > li > a{
+	margin-right: 0px;
+	font-size: 15px !important;
+padding-top: 12px;
+text-align: center !important;
+	text-decoration: none !important;
+border-radius: 1px;
+
+color: white !important;
+display: inline-block !important;
+min-height: 45px;
+min-width: 116px;
+background-color: #54c3eb;
+border: none !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+   border: none;
+	color: white;
+	background-color: #3493b8;
+}
+.nav-tabs > li.active > a,
+ 
+.nav-tabs > li.active > a:focus,
+ 
+.nav-tabs > li.active > a:hover{
+ 
+	border: none;
+	color: white;
+	background-color: #3493b8 !important;
+ 
+}
+
 #rp h1{
 	font-size: 24pt;
 }
 
-.twm{
-	text-decoration: none;
-	border-radius: 1px;
-	font-size: 15px;
-	
-	color: white;
-	text-align: center;
-	display: inline-block;
-	min-height: 45px;
-	min-width: 116px;
-	background-color: #54c3eb;
-}
-.twm:hover{
-	color: white;
-	background-color: #3493b8;
-}
 .twmh{
 
 	width: 348px;
@@ -238,14 +352,18 @@ span.ndate{
 	background-color: #3493b8;
 }
 
+
 .active::after {
     content: ''; 
-    position: absolute; /* Абсолютное позиционирование */
- left: 180px;
-bottom: 287px;
-border: 10px solid transparent;
-border-bottom: 10px solid white;
-   }
+    position: absolute; 
+ 	left: 180px;
+	bottom: 287px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid white;
+}
+
+/* Tabs end */
+
 #pgc{
 	margin-bottom: 100px;
 }
@@ -331,6 +449,10 @@ text-decoration: none;
 	
 }
 
+
+/* Footer
+-------------------------------------------------- */
+
 #footer{
 	margin-top: 40px;
 }
@@ -373,14 +495,7 @@ text-decoration: none;
 	padding: 55px 0px 0px 0px;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 501px !important;
-}
+
 .footer {
 	padding-top: 30px;
   position: absolute;
@@ -390,41 +505,12 @@ body {
   height: 501px;
   background-color: #eceef0;
 }
-.nav-tabs{
-	border: none;
-}
-.nav-tabs > li > a{
-	margin-right: 0px;
-	font-size: 15px !important;
-padding-top: 12px;
-text-align: center !important;
-	text-decoration: none !important;
-border-radius: 1px;
 
-color: white !important;
-display: inline-block !important;
-min-height: 45px;
-min-width: 116px;
-background-color: #54c3eb;
-border: none !important;
-}
 
-.nav > li > a:hover, .nav > li > a:focus {
-   border: none;
-	color: white;
-	background-color: #3493b8;
-}
-.nav-tabs > li.active > a,
- 
-.nav-tabs > li.active > a:focus,
- 
-.nav-tabs > li.active > a:hover{
- 
-	border: none;
-	color: white;
-	background-color: #3493b8 !important;
- 
-}
+/* /Footer */
+
+
+
 
 #subbox{
 	
@@ -497,72 +583,3 @@ border: none !important;
 }
 
 
-input {
-	outline: none;
-}
-input[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
-}
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
-	display: none; 
-}
-
-
-input[type=search] {
-	background: url('../img/seric.png') no-repeat 9px center;
-	border: none;
-	padding: 9px 10px 9px 32px;
-	width: 55px;
-	
-
-	
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
-}
-input[type=search]:focus {
-	width: 130px;
-	background-color: #fff;
-	
-	border-bottom: 1px solid #fff;
-	
-}
-
-
-input:-moz-placeholder {
-	color: #999;
-}
-input::-webkit-input-placeholder {
-	color: #999;
-}
-
-#demo-2{
-	margin-top: 30px;
-}
-
-#demo-2 input[type=search] {
-	width: 15px;
-	padding-left: 10px;
-	color: transparent;
-	cursor: pointer;
-}
-#demo-2 input[type=search]:hover {
-	background-color: #fff;
-}
-#demo-2 input[type=search]:focus {
-	width: 230px;
-	padding-left: 32px;
-	color: #000;
-	
-	cursor: auto;
-}
-#demo-2 input:-moz-placeholder {
-	color: transparent;
-}
-#demo-2 input::-webkit-input-placeholder {
-	color: transparent;
-}
